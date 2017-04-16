@@ -1,0 +1,7 @@
+#main-image {
+  background-image: url("https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F93286f67-e48d-438f-8609-ac2d4e8feb29.jpg");
+  /*width: 400px;*/
+  height: 500px;
+  background-size: 800px;
+  background-repeat: no-repeat;
+}

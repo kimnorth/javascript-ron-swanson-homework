@@ -25,9 +25,6 @@ RonQuotes.prototype = {
     }
     else if (this.index === this.quotes.length - 1){
       this.index = 0;
-      }
-    else {
-      this.index = 0;
     }
   },
 

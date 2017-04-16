@@ -12,7 +12,6 @@ var app = function(){
   button.addEventListener('click', function(){
     ronQuotes.increaseIndex();
     var quote = ronQuotes.returnQuote();
-    console.log(quote);
     var pTag = document.querySelector('#generated-text');
     pTag.innerText = quote.toUpperCase();
   })

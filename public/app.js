@@ -8,7 +8,7 @@ var app = function(){
     var quote = quoteArray[0];
 
     var pTag = document.querySelector('#generated-text');
-      pTag.innerText = quote;
+    pTag.innerText = quote.toUpperCase();
   });
 
 }

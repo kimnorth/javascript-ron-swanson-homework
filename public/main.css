@@ -2,6 +2,17 @@
   background-image: url("https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F93286f67-e48d-438f-8609-ac2d4e8feb29.jpg");
   /*width: 400px;*/
   height: 500px;
-  background-size: 800px;
+  width: 900px;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+#generated-text {
+  font-size: 30px;
+  font-family: Impact;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
 }

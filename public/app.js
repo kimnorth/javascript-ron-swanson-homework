@@ -1,15 +1,23 @@
 var app = function(){
 
-  var ronQuotes = new RonQuotes('http://ron-swanson-quotes.herokuapp.com/v2/quotes');
+  var ronQuotes = new RonQuotes('http://ron-swanson-quotes.herokuapp.com/v2/quotes/60');
+  var button = document.querySelector('#new-quote');
 
-  ronQuotes.getData(function(quoteArray){
-    console.log(ronQuotes);
-    console.log(quoteArray);
-    var quote = quoteArray[0];
+  ronQuotes.getData(function(){
+    // console.log(quoteArray);
+    var quote = ronQuotes.returnQuote();
 
     var pTag = document.querySelector('#generated-text');
     pTag.innerText = quote.toUpperCase();
   });
+
+  button.addEventListener('click', function(){
+    ronQuotes.increaseIndex();
+    var quote = ronQuotes.returnQuote();
+    console.log(quote)
+    var pTag = document.querySelector('#generated-text');
+    pTag.innerText = quote.toUpperCase();
+  })
 
 }
 

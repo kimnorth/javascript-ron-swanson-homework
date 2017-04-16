@@ -1,6 +1,7 @@
 var RonQuotes = function(url){
   this.url = url;
   this.quotes = [];
+  this.index = 0;
 }
 
 RonQuotes.prototype = {
@@ -16,7 +17,14 @@ RonQuotes.prototype = {
       }
     }.bind(this);
     request.send();
+  },
 
+  increaseIndex: function(){
+    this.index++;
+  },
+
+  returnQuote: function(){
+    return this.quotes[this.index];
   }
 
 }

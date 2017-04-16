@@ -4,9 +4,7 @@ var app = function(){
   var button = document.querySelector('#new-quote');
 
   ronQuotes.getData(function(){
-    // console.log(quoteArray);
     var quote = ronQuotes.returnQuote();
-
     var pTag = document.querySelector('#generated-text');
     pTag.innerText = quote.toUpperCase();
   });
@@ -14,7 +12,7 @@ var app = function(){
   button.addEventListener('click', function(){
     ronQuotes.increaseIndex();
     var quote = ronQuotes.returnQuote();
-    console.log(quote)
+    console.log(quote);
     var pTag = document.querySelector('#generated-text');
     pTag.innerText = quote.toUpperCase();
   })

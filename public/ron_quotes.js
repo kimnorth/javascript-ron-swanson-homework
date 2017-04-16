@@ -20,7 +20,15 @@ RonQuotes.prototype = {
   },
 
   increaseIndex: function(){
-    this.index++;
+    if (this.index < this.quotes.length - 1){
+      this.index++;
+    }
+    else if (this.index === this.quotes.length - 1){
+      this.index = 0;
+      }
+    else {
+      this.index = 0;
+    }
   },
 
   returnQuote: function(){
